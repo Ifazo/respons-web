@@ -5,6 +5,7 @@
 }
 
 body {
+  min-width: 1024px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -174,7 +175,7 @@ hr {
 Media Query
 ====================== */
 
-@media only screen and (min-width: 768px) and (max-width: 1023) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   main {
     display: block;
   }
@@ -193,7 +194,7 @@ Media Query
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 767px) {
   header {
     display: flex;
     flex-direction: column;
