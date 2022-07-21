@@ -15,7 +15,7 @@ Header
 header {
   background-color: #161616;
   color: white;
-  width: 90%;
+  width: 95%;
   height: 800px;
   margin: 50px auto;
   padding-left: 50px;
@@ -174,9 +174,41 @@ hr {
 Media Query
 ====================== */
 
-@media only screen and (max-width: 767) {
+@media only screen and (min-width: 768px) and (max-width: 1023) {
+  main {
+    display: block;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .news {
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
   header {
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    background: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .news {
+    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer {
     display: flex;
     flex-direction: column;
   }
